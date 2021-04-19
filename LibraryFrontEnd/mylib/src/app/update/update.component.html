@@ -1,0 +1,26 @@
+<p>update works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" 
+class="navbar navbar-light" style="background-color: #0b0c0c;">
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active"> Add Book</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/user" class="nav-link"> Get All books</a>
+  </li>
+</ul></nav>
+<h3>update book</h3>
+<form (ngSubmit)="onSubmit()"  style="background-color: #16cccc;" style="border:1px solid black">
+
+<div class="col-md-4 offset-md-4" class="form-group">
+  <label class="form-label">Enter Book Name</label>
+    <input type="text"  class="form-control" name="bookName" id="bookName" [(ngModel)]="user.bookName">
+  
+   
+</div>
+<div class="col-md-4 offset-md-4" class="form-group">
+    <label class="form-label">Enter Book Author Name</label>
+    <input type="text"  class="form-control" name="bookAuthor" id="bookAuthor" [(ngModel)]="user.bookAuthor">
+</div>
+<button type="submit" class="btn btn-primary" >Add Book</button>
+</form>
